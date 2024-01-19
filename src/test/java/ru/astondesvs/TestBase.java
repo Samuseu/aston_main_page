@@ -14,7 +14,7 @@ import java.util.Map;
 public class TestBase {
     @BeforeAll
     static void setUp() {
-        Configuration.baseUrl = System.getProperty("base_url", "https://astondevs.ru/");
+        Configuration.baseUrl = System.getProperty("base_url", "https://astondevs.ru");
         Configuration.remote = System.getProperty("remote_selenoid", "http://selenoid:4444/wd/hub");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserSize = System.getProperty("browser_size", "1920x1080");
